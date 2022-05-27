@@ -1,32 +1,33 @@
 class Student:
     # [assignment] Skeleton class. Add your code here
-    
-    def __init__(self, name,age,tracks,score):
+
+    def _init_(self, name, age, tracks, score):
         self.name = name
         self.age = age
         self.tracks = tracks
         self.score = score
-        
-    @classmethod
-    def change_name(self,name):
+
+    # define the name as a string
+    def change_name(self, name):
         self.name = name
         print("the student name is", self.name)
 
-    @classmethod
-    def change_age(self,age):
+    # define change age method as an integer
+    def change_age(self, age):
         self.age = int(age)
         print(self.name, "'s age is", self.age)
 
-    @classmethod
-    def add_track(self,tracks):
+    # define add track method
+    def add_track(self, tracks):
         self.tracks = tracks
         print(self.name, "tracks are", self.tracks)
 
-    @classmethod
-    def get_score (self):       
+    # define get score method to return the score
+    def get_score(self):
         print(self.name, "score is", self.score)
 
-Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
+
+Bob = Student(name="Bob", age=26, tracks=["FE", "BE"], score=20.90)
 
 # Expected methods
 Bob.change_name("Peter")
