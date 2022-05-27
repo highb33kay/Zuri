@@ -4,7 +4,7 @@ class Student:
     def __init__(self, name,age,tracks,score):
         self.name = name
         self.age = age
-        self.track = tracks
+        self.tracks = tracks
         self.score = score
         
     @classmethod
@@ -17,7 +17,8 @@ class Student:
 
     @classmethod
     def add_track(self,tracks):
-        self.track = tracks.append[]
+        self.tracks = tracks
+        
 
     @classmethod
     def get_score(self,score):
