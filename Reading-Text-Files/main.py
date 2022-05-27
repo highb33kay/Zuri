@@ -15,9 +15,16 @@ def count_words():
     text = str(read_file_content("./story.txt"))
     # [assignment] Add your code here
     words = {}
+    count = 1
     for f in text.split(" "):
-        count = 0
-        words[f] = f.count("f")
+        count += 1
+        words[f] = count
+        # words[f] = f.count("f")
+        # if words[f] in words:
+        #     count += 1
+        #     words[f] = count
+            
+         
     print(words)
     return words
 
