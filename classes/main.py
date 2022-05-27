@@ -10,19 +10,20 @@ class Student:
     @classmethod
     def change_name(self,name):
         self.name = name
+        print("the student name is", self.name)
 
     @classmethod
     def change_age(self,age):
         self.age = int(age)
+        print(self.name, "'s age is", self.age)
 
     @classmethod
     def add_track(self,tracks):
         self.tracks = tracks
-        
+        print(self.name, "tracks are", self.tracks)
 
-    @classmethod
-    def get_score(self,score):
-        return score
+    def get_score (self):       
+        print(self.name, "score is", self.score)
 
 Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
 
