@@ -12,19 +12,29 @@ def read_file_content(filename):
 
 
 def count_words():
-    text = str(read_file_content("./story.txt"))
+    text = read_file_content("./story.txt")
     # [assignment] Add your code here
+    # convert text to lower case
+    text = text.lower()
+    # split the text into individual words 
+    text = text.split()
+    
+    # declare a dictionary and count to keep track of words 
     words = {}
-    count = 1
-    for f in text.split(" "):
-        count += 1
-        words[f] = count
-        # words[f] = f.count("f")
-        # if words[f] in words:
-        #     count += 1
-        #     words[f] = count
-            
-         
+    word_count = 0
+    
+    # loop through each word
+    for f in text:
+        if f in words:
+            # for each word found in words increment word_count by one
+            word_count += 1
+            # assign value of word_count to words dictionary
+            words[f] = word_count
+        
+        
+        else:
+            words[f] = 1
+
     print(words)
     return words
 
