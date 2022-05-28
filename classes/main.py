@@ -22,9 +22,9 @@ class Student:
         self.tracks = tracks
         print(self.name, "tracks are", self.tracks)
 
-    @classmethod
+
     def get_score (self):       
-        print(self.name, "score is", self.score)
+        print("Student's score is", self.score)
 
 Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
 
