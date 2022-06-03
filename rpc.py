@@ -32,28 +32,22 @@ import random
 options = ["r","p", "s"]
 
 # When the program is run, ask the user to pick an option between "R", "P" or "S"
-def main():
-    user_option = input('make a choice between R, P, S where R" for "rock", "P" for "paper", "S" for "scissors".: ').lower()
-    comp_choice = random.choice(options)
-    start(user_option, comp_choice)
+user_option = input('make a choice between R, P, S where R" for "rock", "P" for "paper", "S" for "scissors".: ').lower()
+comp_choice = random.choice(options)
 
 # if comp_choice == user_option:
-def start(user_option,comp_choice): 
-    while user_option in options:
-        if comp_choice == "r" and user_option == "s":
-            print(
-                f"Computer choice:{ comp_choice } and User Choice is {user_option}.Winner = Computer ")
-        elif comp_choice != "r" and user_option == "s":
-            print(f"Computer choice:{ comp_choice } and User Choice is {user_option}. winner = User")
-        elif comp_choice == "p" and user_option == "r":
-            print(f"Computer choice:{ comp_choice } and User Choice is {user_option}. winner = Computer ")
-        elif comp_choice == "s" and user_option == "p":
-            print(f"Computer choice:{ comp_choice } and User Choice is {user_option}. winner = Computer")
-        else:
-            print(f"Computer choice:{ comp_choice } and User Choice is {user_option}. Draw")
-    else:
-        main()
-        
-        
 
-main()
+while user_option in options:
+    if comp_choice == "r" and user_option == "s":
+        print(
+            f"Computer choice:{ comp_choice } and User Choice is {user_option}.Winner = Computer ")
+    elif comp_choice != "r" and user_option == "s":
+        print(f"Computer choice:{ comp_choice } and User Choice is {user_option}. winner = User")
+    elif comp_choice == "p" and user_option == "r":
+        print(f"Computer choice:{ comp_choice } and User Choice is {user_option}. winner = Computer ")
+    elif comp_choice == "s" and user_option == "p":
+        print(f"Computer choice:{ comp_choice } and User Choice is {user_option}. winner = Computer")
+    else:
+        print(f"Computer choice:{ comp_choice } and User Choice is {user_option}. Draw")
+else:
+    
