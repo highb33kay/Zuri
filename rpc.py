@@ -26,6 +26,7 @@
 # Create a list to store all possible options:R, P, S
 
 import random
+from re import X
 
 
 
@@ -37,17 +38,26 @@ comp_choice = random.choice(options)
 
 # if comp_choice == user_option:
 
-while user_option in options:
-    if comp_choice == "r" and user_option == "s":
-        print(
-            f"Computer choice:{ comp_choice } and User Choice is {user_option}.Winner = Computer ")
-    elif comp_choice != "r" and user_option == "s":
-        print(f"Computer choice:{ comp_choice } and User Choice is {user_option}. winner = User")
-    elif comp_choice == "p" and user_option == "r":
-        print(f"Computer choice:{ comp_choice } and User Choice is {user_option}. winner = Computer ")
-    elif comp_choice == "s" and user_option == "p":
-        print(f"Computer choice:{ comp_choice } and User Choice is {user_option}. winner = Computer")
-    else:
-        print(f"Computer choice:{ comp_choice } and User Choice is {user_option}. Draw")
-else:
-    
+
+    if user_option in options:
+        if user_option == comp_choice:
+            print("draw")
+        elif user_option == "r":
+            if comp_choice == "p":
+                print("You Lose")
+            else:
+                print("you win")
+                break
+        elif user_option == "p":
+            if comp_choice == "s":
+                print("you lose")
+            else:
+                print("you win")
+                break
+        elif user_option == "s":
+            if comp_choice == "r":
+                print("you lose")
+            else:
+                print("you win")
+                break
+    break
