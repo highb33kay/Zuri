@@ -35,7 +35,7 @@ options = ["r","p", "s"]
 user_option = " "
 comp_choice = random.choice(options)
 
-# if comp_choice == user_option:
+# Validate User Choice 
 def main(user_option, options):
     while user_option not in options:
         user_option = input('make a choice between R, P, S where R" for "rock", "P" for "paper", "S" for "scissors": ').lower()
@@ -44,10 +44,12 @@ def main(user_option, options):
         else:
             print("That is an invalid choice ")
 
+#game 
 def game(user_option, options):
     if user_option in options:
         if user_option == comp_choice:
             print(f"User Choice is {user_option} and Computer Choice is {comp_choice}. Game is a Draw")
+            
         elif user_option == "r":
             if comp_choice == "p":
                 print(
