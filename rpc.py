@@ -26,38 +26,55 @@
 # Create a list to store all possible options:R, P, S
 
 import random
-from re import X
 
 
 
 options = ["r","p", "s"]
 
 # When the program is run, ask the user to pick an option between "R", "P" or "S"
-user_option = input('make a choice between R, P, S where R" for "rock", "P" for "paper", "S" for "scissors".: ').lower()
+user_option = " "
 comp_choice = random.choice(options)
 
 # if comp_choice == user_option:
+def main(user_option, options):
+    while user_option not in options:
+        user_option = input('make a choice between R, P, S where R" for "rock", "P" for "paper", "S" for "scissors": ').lower()
+        if user_option in options:
+            game(user_option, options)
+        else:
+            print("That is an invalid choice ")
 
-
+def game(user_option, options):
     if user_option in options:
         if user_option == comp_choice:
-            print("draw")
+            print(f"User Choice is {user_option} and Computer Choice is {comp_choice}. Game is a Draw")
         elif user_option == "r":
             if comp_choice == "p":
-                print("You Lose")
+                print(
+                    f"User Choice is {user_option} and Computer Choice is {comp_choice}. You Lose")
             else:
-                print("you win")
-                break
+                print(
+                    f"User Choice is {user_option} and Computer Choice is {comp_choice}. You win")
+                # break
         elif user_option == "p":
             if comp_choice == "s":
-                print("you lose")
+                print(
+                    f"User Choice is {user_option} and Computer Choice is {comp_choice}. you lose")
             else:
-                print("you win")
-                break
+                print(
+                    f"User Choice is {user_option} and Computer Choice is {comp_choice}. you win")
+                # break
         elif user_option == "s":
             if comp_choice == "r":
-                print("you lose")
+                print(
+                    f"User Choice is {user_option} and Computer Choice is {comp_choice}. you lose")
             else:
-                print("you win")
-                break
-    break
+                print(
+                    f"User Choice is {user_option} and Computer Choice is {comp_choice}. you win")
+                # break
+    # break
+    
+
+if __name__ == '__main__':
+    main(user_option, options)
+    
