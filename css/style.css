@@ -2,6 +2,6 @@ body{
     padding: 100vh;
 }
 
-#box-container {
-    background-color: aquamarine;
+.box-container {
+    background: rgb(0, 0, 0);
 }
