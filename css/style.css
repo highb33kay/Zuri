@@ -1,7 +1,30 @@
-body{
-    padding: 100vh;
-}
+
 
 .box-container {
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    padding-right: 100px;
+    display: flex;
+}
+
+.suv{
+    background-color: #016972;
+    padding: 50px;
+    width: fit-content;
+    height: 300px;
+}
+
+.sedan{
+    background-color: #e28525;
+    padding: 50px;
+    width: fit-content;
+    height: 300px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.luxury {
+    background-color: #00403f;
+    padding: 50px;
+    width: fit-content;
+    height: 300px;
+    border-radius: 0px 10px 10px 0px;
 }
