@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #ed7672;
+    padding: 0.1em;
+}
+
+.text-top{
+    padding-top: 20%;
+}
+
+.box-container h1{
+    color: white;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 10px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.box-container p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+
+.box-container{
+    display: flex;
+    background-color:;
+    padding: 2rem;
+    background-image: url("bg-intro-desktop.png");
+    padding: 3em;
+    background-size: contain;
+    width: 80%;
+}
+
+.form-box{
+    border-radius: 5px;
+  padding: 20px;
+}
+
+.button-1{
+    background-color: rgb(93, 84, 163);
+    width: 100%;
+    text-align: center;
+    box-shadow: rgba(92, 92, 92, 0.274) 0px 5px;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0px;
+    color: white;
+    border: 0px;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.button-2{
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;;
+    background-color: #37cc8a;
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    margin: 1em 0px;
+    box-shadow: rgba(92, 92, 92, 0.274) 0px 5px;
+    color: white;
+}
+
+.try {
+    padding-bottom: 10px;
+}
+
+input,button{
+    width: 100%;
+    padding: 10px;
+}
+
+input[type=text],input[type=email], input[type=password]{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;;
+}
+
+form{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+     box-shadow: rgba(92, 92, 92, 0.274) 0px 5px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .box-container {
+    flex-direction: column;
+    padding: rem;
+    background-image: url("bg-intro-mobile.png");
+    padding: em;
+    background-size: contain;
+    height: 100%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: #ed7672;
+    padding: 0.1em;
+    flex-direction: column;
+}
+
+.text-top{
+    padding-top: 10%;
+    padding: 20px;
+}
+
+}
