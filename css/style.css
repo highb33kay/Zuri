@@ -9,7 +9,7 @@ body{
 }
 
 main{
-    width: 50%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -17,3 +17,76 @@ main{
     height: 100vh;
 }
 
+.box-container{
+    display: flex;
+    background-color: white;
+    padding: 2rem;
+    width: 100%;
+}
+
+
+
+.box-container h1{
+    color: white;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.box-container p{
+    color: white;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.suv{
+    background-color: #016972;
+    padding: 2em;
+    width: 100%;
+}
+
+.sedan{
+    background-color: #e28525;
+    padding: 2em;
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.luxury {
+    background-color: #00403f;
+    padding: 2em;
+    width: 100%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+button{
+    position: relative;
+    margin-top: 2rem;
+    padding: 0.6em 1.2em;
+    background-color: white ;
+    border: 0.125rem solid transparent;
+    border-radius: 2.75rem;
+    text-align: center;
+    text-decoration: none;
+    mix-blend-mode: screen;
+}
+
+button:active{
+    color: transparent;
+    background-color: rgba(255,255,255,0)
+}
+
+button:hover{
+    background-color: rgba(255,255,255,0);
+    color: white;
+    border: solid 1px;
+}
+
+img{
+    height: 2rem;
+    object-fit: contain;
+}
