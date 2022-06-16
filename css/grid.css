@@ -28,14 +28,12 @@ main div {
 
 .item-a {
     background-color: #eb5020;
-    display: grid;
     grid-area: a;
 }
 
 .item-b {
     background-color: #ffa401;
     grid-area: b;
-    display: grid;
 }
 
 .item-c {
